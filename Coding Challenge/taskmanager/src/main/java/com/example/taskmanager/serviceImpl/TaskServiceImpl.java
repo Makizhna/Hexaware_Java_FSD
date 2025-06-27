@@ -13,7 +13,7 @@ import com.example.taskmanager.service.TaskService;
 public class TaskServiceImpl implements TaskService{
 	
 	
-	@Autowired
+    @Autowired
     private TaskRepository taskRepository;
 
 
