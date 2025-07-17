@@ -1,0 +1,14 @@
+package com.example.carrercrafter.enums;
+
+public enum InterviewStatus {
+	SCHEDULED, 
+	COMPLETED, 
+	CANCELLED,
+	RESCHEDULED,
+	PENDING_RESCHEDULE,
+	AWAITING_NEW_DATE,
+	
+	RESCHEDULE_REQUESTED,
+    RESCHEDULE_REJECTED
+
+}

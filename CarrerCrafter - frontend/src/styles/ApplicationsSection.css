@@ -1,0 +1,210 @@
+.applications-section {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+
+pre {
+  white-space: pre-wrap;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.filters input,
+.filters select {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.application-card {
+  border-radius: 10px;
+}
+
+.application-card .card-body {
+  background: #ffffff;
+}
+
+.table-sm th {
+  background: #f1f1f1;
+  font-weight: 500;
+}
+
+.application-card .card-body {
+  background-color: #fefefe;
+  border-radius: 8px;
+}
+
+.application-card .row p {
+  margin-bottom: 0.4rem;
+}
+
+.application-card a {
+  text-decoration: underline;
+}
+
+
+.modal-dialog modal-lg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1050; /* Bootstrap modal z-index */
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Correct and center the modal */
+.modal.show.d-block {
+  background-color: rgba(0, 0, 0, 0.5); /* backdrop */
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 1rem;
+}
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: #f1f3f5;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+.modal-body .form-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #495057;
+}
+
+.modal-body .form-control.bg-light {
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.95rem;
+}
+/* Profile, form toggle, interview buttons */
+.application-card .btn-sm {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+}
+
+/* Button spacing layout */
+.application-card .card-body .d-flex.flex-wrap.gap-2.mt-3 {
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+/* Inside reschedule alert box */
+.alert .btn-sm {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.3rem;
+}
+.application-card {
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* Group buttons into a neat row */
+.application-card .action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Improve button look */
+.application-card .btn-action {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.88rem;
+  border-radius: 5px;
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.application-card .btn-action:hover {
+  background-color: #e2e6ea;
+  border-color: #adb5bd;
+}
+
+/* Specific styling for icons inside */
+.application-card .btn-action svg {
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+/* Fix schedule/reject buttons look */
+.application-card .btn-schedule {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.application-card .btn-schedule:hover {
+  background-color: #0b5ed7;
+}
+
+.application-card .btn-reject {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.application-card .btn-reject:hover {
+  background-color: #c82333;
+}
+
+/* 👇 Ensures all 3 buttons are in a single horizontal row */
+.profile-actions-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.75rem 0 1rem 0;
+  align-items: center;
+}
+
+/* 👇 Prevent buttons from shrinking on smaller screens */
+.profile-actions-group .btn-sm {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+

@@ -1,0 +1,51 @@
+/* src/styles/PostJobPage.css */
+.post-job-container {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins", sans-serif;
+}
+
+.post-job-container h2 {
+  margin-bottom: 1.5rem;
+  color: #0a2640;
+  text-align: center;
+}
+
+.post-job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.post-job-form input,
+.post-job-form textarea,
+.post-job-form select {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.btn-filled {
+  background-color: #00bfa6;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-filled:hover {
+  background-color: #009e8f;
+}

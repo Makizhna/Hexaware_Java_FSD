@@ -1,0 +1,166 @@
+/*job-listings.css*/
+.job-listings-container {
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.job-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.job-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.btn-filled {
+  background-color: #00bfa6;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-filled:hover {
+  background-color: #009e8f;
+}
+.browsejobs-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+}
+
+.browsejobs-heading {
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.browsejobs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .browsejobs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+.browsejobs-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.3s ease;
+}
+
+.browsejobs-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.browsejobs-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.browsejobs-info p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+}
+
+.browsejobs-info svg {
+  min-width: 18px;
+  height: 18px;
+}
+
+/* Icon-specific colors */
+.browsejobs-info .fa-map-marker-alt {
+  color: #e53e3e; 
+}
+
+.browsejobs-info .fa-money-bill-wave {
+  color: #38a169; 
+}
+
+.browsejobs-info .fa-clock {
+  color: #d69e2e; 
+}
+
+.browsejobs-info .fa-user-tie {
+  color: #805ad5; 
+}
+
+.browsejobs-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.browsejobs-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.browsejobs-btn.apply {
+  background-color: #00bfa6;
+  color: white;
+}
+
+.browsejobs-btn.apply:hover {
+  background-color: #009e8f;;
+}
+
+.browsejobs-btn.save {
+  background-color: #edf2f7;
+  color: #2d3748;
+}
+
+.browsejobs-btn.save:hover {
+  background-color: #e2e8f0;
+}

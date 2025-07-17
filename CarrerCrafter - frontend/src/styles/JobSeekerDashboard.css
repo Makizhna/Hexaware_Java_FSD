@@ -1,0 +1,175 @@
+/* Layout */
+.jobseeker-dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #0a2640;
+  color: white;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: #00bfa6;
+  color: white;
+}
+
+/* Main content */
+.dashboard-main {
+  flex: 1;
+  padding: 2.5rem 3.5rem;
+  overflow-y: auto;
+}
+
+.dashboard-main h1 {
+  font-size: 2.2rem;
+  color: #0a2640;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.dashboard-cards .card {
+  flex: 1;
+  background: white;
+  border-radius: 15px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.dashboard-cards .card:hover {
+  transform: translateY(-4px);
+}
+
+.dashboard-cards .card h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+}
+
+.dashboard-cards .card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00bfa6;
+}
+
+/* Recent Activity */
+.recent-activity {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.recent-activity h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.recent-activity ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.recent-activity li {
+  margin-bottom: 0.6rem;
+}
+
+/* Recommended Jobs Section */
+.recommended-section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.recommended-section h3 {
+  font-size: 1.4rem;
+  color: #0a2640;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.recommended-section h3::before {
+  content: "🎯";
+  font-size: 1.5rem;
+}
+
+/* Optional: Apply button spacing inside job cards */
+.browsejobs-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+/* Buttons */
+.btn-filled {
+  background-color: #00bfa6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-filled:hover {
+  background-color: #009e8f;
+}
+.logout-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.brand {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

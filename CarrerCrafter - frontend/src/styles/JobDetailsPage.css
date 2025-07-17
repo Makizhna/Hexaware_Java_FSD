@@ -1,0 +1,274 @@
+.job-details-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+.breadcrumb-nav a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+.breadcrumb-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Company Info */
+.company-header {
+  border-left: 5px solid #0d6efd;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.company-header h2 {
+  margin-bottom: 0.5rem;
+}
+.company-header p {
+  margin-bottom: 0.4rem;
+  font-size: 15px;
+}
+.company-header a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+.company-header a:hover {
+  text-decoration: underline;
+}
+
+/* Job Highlights */
+.job-highlights .badge {
+  font-size: 14px;
+  padding: 8px 14px;
+  background-color: #eef2f7;
+  color: #333;
+  border-radius: 20px;
+  margin: 0 6px 8px 0;
+  transition: all 0.2s ease;
+}
+.job-highlights .badge:hover {
+  background-color: #e0e7ff;
+  cursor: default;
+}
+
+/* Section Titles */
+.section-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 24px;
+  color: #0a2640;
+}
+
+/* Skills Tags */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.skill-tag {
+  background-color: #e3f2fd;
+  color: #007bff;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+.skill-tag:hover {
+  background-color: #cce4fb;
+}
+
+/* Buttons */
+.action-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.btn-apply, .btn-save, .btn-back {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-apply {
+  background-color: #00bfa6;
+  color: white;
+}
+.btn-apply:hover {
+  background-color: #00bfa6;
+}
+.btn-save {
+  background-color: #ffffff;
+  color: #0a2640;
+  border: 1px solid #ccc;
+}
+.btn-save:hover {
+  background-color: #f1f1f1;
+}
+.btn-back {
+  background-color: #6c757d;
+  color: white;
+}
+.btn-back:hover {
+  background-color: #5a6268;
+}
+
+/* MODAL STYLES */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Inside Modal Form Fields */
+.modal-content textarea,
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.modal-content textarea:focus,
+.modal-content input:focus,
+.modal-content select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Modal buttons */
+.modal-content .btn {
+  min-width: 120px;
+}
+
+@media (max-height: 500px) {
+  .modal-content {
+    max-height: 80vh;
+  }
+}
+
+.badge.bg-primary-subtle {
+  background-color: #e3f2fd;
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.badge.bg-primary-subtle:hover {
+  background-color: #d0e8fd;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0a2640;
+  margin-bottom: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #e3f2fd;
+  color: #0d6efd;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: #d0e8fd;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-apply, .btn-save, .btn-back {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-apply {
+  background-color: #00bfa6;
+  color: white;
+}
+.btn-apply:hover {
+  background-color: #00bfa6;
+}
+
+.btn-save {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #0a2640;
+}
+.btn-save:hover {
+  background-color: #f8f9fa;
+}
+
+.btn-back {
+  background-color: #6c757d;
+  color: white;
+}
+.btn-back:hover {
+  background-color: #5a6268;
+}
+
+
